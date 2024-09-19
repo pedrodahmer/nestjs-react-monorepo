@@ -18,9 +18,15 @@ implementation steps:
 - change nestjs start:dev command to just "dev" and add --preserveWatchOutput flag
 - add nestjs useStatic and trace it to ['../..', 'client', 'dist']
 - add vite proxy to redirect /api requests to nestjs port
+- push structure to git repo
 
 additional info
 
 - running npm run dev will run both dev commands for server and client apps
 - must build before running npm install
 - after build command, run npm start (nestjs port should render vite interface)
+
+recommendations
+
+- all commits must be made from root directory
+- to install dependencies --filter flag from pnpm add can be used on root
